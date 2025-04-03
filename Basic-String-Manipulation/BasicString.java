@@ -15,11 +15,11 @@ public class BasicString {
         System.out.println("Total Characters (excluding spaces): " + fullName.replace(" ","").length());
 
         //get the initials
-        String initials = fullName.substring(0,1);
+        String initials = fullName.substring(0,1) + ".";
         
         for (int i = 0; i < fullName.length(); i++) {
             if (fullName.charAt(i) == ' ' && i + 1 < fullName.length()) {
-                initials += fullName.substring(i + 1, i + 2); // Get the next character
+                initials += fullName.substring(i + 1, i + 2) + "."; 
             }
         }
         //display the initials
