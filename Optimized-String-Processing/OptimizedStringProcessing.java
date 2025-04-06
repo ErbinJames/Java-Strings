@@ -31,7 +31,7 @@ public class OptimizedStringProcessing {
 
         // for loop 
         for (int i = 0; i < TIMES; i++){
-            result += "Java";
+            result = result + "Java";
         }
 
         long endTime = System.nanoTime(); // end timing
